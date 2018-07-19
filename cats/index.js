@@ -1,16 +1,12 @@
 'use strict';
+
 $(function () {
 
-$('.thumbnail').on('click', event => {
+  $('.thumbnail').on('click', function(event)  {
 		const grab = $(this).find('img').attr('src');
-		$('.hero img' ).attr('src');
-		$('.hero img' ).attr('src', grab);
+    const grabA = $(this).find('img').attr('alt');
+    $('.hero img').attr('src', grab).attr('alt', grabA);
 
-
-		console.log('grab');
-	});
-// find the thumnail pic (event listen)
-// replace .attr  .find
-// change the alt
+  });
 
 });
